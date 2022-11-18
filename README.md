@@ -1,7 +1,7 @@
 
-Group number : 7 .
+Group number : 7 
 
-Name: Nadav Levy.
+Name: Nadav Levy
 
 Name: Bar Rachmani
 
