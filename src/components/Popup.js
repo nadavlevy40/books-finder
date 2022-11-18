@@ -17,6 +17,11 @@ function Popup(props) {
       { props.authors &&
         props.authors.map((author) => <p key={author}>{author}</p>)
       }
+
+      { props.categorys&&
+        props.categorys.map((category)=><p key={category}>{category}</p>)
+
+      }
       <ul>
       <li>
       <button>Add item to wishlist!</button>
