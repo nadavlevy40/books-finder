@@ -1,43 +1,25 @@
-import React from 'react';
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Link
-} from 'react-router-dom';
+import React from "react";
+import axios from "axios";
 
-import './App.css';
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
-import Home from './components/Home';
-import Search from './components/Search';
-import WishList from './components/WishList';
+import "./App.css";
+
+import Home from "./components/Home";
+import Search from "./components/Search";
+import WishList from "./components/WishList";
+import Login from "./components/Login";
 
 function App() {
   return (
     <Router>
-      <div>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/search">Search</Link>
-            </li>
-            <li>
-              <Link to="/wishlist">Wish List</Link>
-            </li>
-          </ul>
-        </nav>
-        <Routes>
-          <Route path="/search" element={<Search/>}>
-          </Route>
-          <Route path="/wishlist" element={<WishList/>}>
-          </Route>
-          <Route path="/" element={<Home/>}>
-          </Route>
-        </Routes>
-      </div>
+      <Routes>
+        <Route path="/search" element={<Search />}></Route>
+        <Route path="/wishlist" element={<WishList />}></Route>
+        <Route path="/" element={<Home />}></Route>
+        <Route path="/login" element={<Login/>}></Route>
+
+      </Routes>
     </Router>
   );
 }
