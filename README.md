@@ -1,3 +1,10 @@
+
+Group number : 7
+Name: Nadav Levy
+Name: Bar Rachmani
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
