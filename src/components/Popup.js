@@ -1,7 +1,17 @@
 import React, { useState } from "react";
 import "./Popup.css"
 function Popup(props) {
+
   const [open, setOpen] = useState(false);
+  const[WishList, setWishList]=useState([]);
+
+  function handleAddWishList(){
+    alert("Item added!");
+    const book=props.bookTitle;
+    setWishList(oldArray=>[...oldArray, book]);
+    console.log(WishList);
+
+  }
 
   const closePopup = () => {
     setOpen(false)
@@ -24,7 +34,7 @@ function Popup(props) {
       }
       <ul>
       <li>
-      <button>Add item to wishlist!</button>
+      <button onClick={handleAddWishList}>Add item to wishlist!</button>
       </li>
       <li>
       <button onClick={closePopup}>Close X</button>
